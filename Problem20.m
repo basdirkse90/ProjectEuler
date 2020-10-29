@@ -1,0 +1,24 @@
+% Project Euler Problem 20
+% runtime = 0.01 (s)
+clc;
+clear;
+warning on;
+close all;
+tic;
+
+
+%calculated with classic maple
+str = '93326215443944152681699238856266700490715968264381621468592963895217599993229915608941463976156518286253697920827223758251185210916864000000000000000000000000';
+
+a=0;
+for i = 1:length(str)-2
+    a = a + str2num(str(i));
+end
+
+
+a
+
+
+
+
+toc;
