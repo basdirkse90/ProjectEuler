@@ -1,3 +1,5 @@
+import time
+
 def prime_factors(n):
     i = 2
     factors = []
@@ -10,3 +12,11 @@ def prime_factors(n):
     if n > 1:
         factors.append(n)
     return factors
+
+
+def time_function(func, *args, **kwargs):
+    t1 = time.time()
+    func(*args, **kwargs)
+    elapsed = time.time() - t1
+    print(f"Total computation took {elapsed:.3f} (s)")
+
